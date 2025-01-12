@@ -1,13 +1,19 @@
-import { View, Text } from "react-native";
 import "@/global.css";
+import { View } from "react-native";
+import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
+import { Alert, AlertIcon, AlertText } from "@/components/ui/alert";
+import { InfoIcon } from "@/components/ui/icon";
 
 function NativeComponent() {
   return (
-    <View className="flex justify-center items-center h-screen">
-      <View className="bg-blue-500 p-4 rounded-lg shadow-md shadow-black/50">
-        <Text className="text-white text-2xl font-bold">Hello, Web World!</Text>
+    <GluestackUIProvider mode="light">
+      <View className="flex justify-center items-center h-screen">
+        <Alert>
+          <AlertIcon as={InfoIcon} />
+          <AlertText>Description of alert!</AlertText>
+        </Alert>
       </View>
-    </View>
+    </GluestackUIProvider>
   );
 }
 
