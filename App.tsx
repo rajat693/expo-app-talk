@@ -6,7 +6,7 @@ import { InfoIcon } from "@/components/ui/icon";
 
 const AlertDemo = () => {
   return (
-    <Alert>
+    <Alert action="primary">
       <AlertIcon as={InfoIcon} />
       <AlertText>Description of alert!</AlertText>
     </Alert>
@@ -16,11 +16,11 @@ const AlertDemo = () => {
 function NativeComponent() {
   return (
     <GluestackUIProvider mode="light">
-      <View className="flex justify-center items-center h-screen">
+      <View className="flex-1 justify-center items-center">
         <AlertDemo />
       </View>
     </GluestackUIProvider>
   );
 }
-  
+
 export default NativeComponent;

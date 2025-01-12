@@ -20,9 +20,10 @@ const alertStyle = tva({
     action: {
       error: 'bg-background-error',
       warning: 'bg-background-warning',
-      success: 'bg-background-success',
+      success: 'bg-green-500',
       info: 'bg-background-info',
       muted: 'bg-background-muted',
+      primary: 'bg-violet-300'
     },
 
     variant: {
@@ -78,6 +79,7 @@ const alertTextStyle = tva({
       success: 'text-success-800',
       info: 'text-info-800',
       muted: 'text-background-800',
+      primary: 'text-primary-500'
     },
   },
 });
@@ -101,6 +103,7 @@ const alertIconStyle = tva({
       success: 'text-success-800',
       info: 'text-info-800',
       muted: 'text-background-800',
+      primary: 'text-primary-500',
     },
   },
 });
