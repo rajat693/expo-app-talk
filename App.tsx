@@ -1,32 +1,14 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text } from "react-native";
+import "@/global.css";
 
 function NativeComponent() {
   return (
-    <View style={styles.rootContainer}>
-      <View style={styles.container}>
-        <Text style={styles.text}>Hello, Native World!</Text>
+    <View className="flex justify-center items-center h-screen">
+      <View className="bg-blue-500 p-4 rounded-lg shadow-md shadow-black/50">
+        <Text className="text-white text-2xl font-bold">Hello, Web World!</Text>
       </View>
     </View>
   );
 }
 
 export default NativeComponent;
-
-const styles = StyleSheet.create({
-  rootContainer: { flex: 1, justifyContent: "center", alignItems: "center" },
-  container: {
-    backgroundColor: "blue",
-    padding: 16,
-    borderRadius: 8,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.5,
-    shadowRadius: 6,
-    elevation: 10,
-  },
-  text: {
-    color: "white",
-    fontSize: 24,
-    fontWeight: "bold",
-  },
-});
