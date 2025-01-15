@@ -3,6 +3,8 @@ import { View } from "react-native";
 import { GluestackUIProvider } from "@/components/ui/gluestack-ui-provider";
 import { Alert, AlertIcon, AlertText } from "@/components/ui/alert";
 import { InfoIcon } from "@/components/ui/icon";
+import { Button, ButtonText } from "@/components/ui/button";
+import React from "react";
 
 const AlertDemo = () => {
   return (
@@ -13,11 +15,20 @@ const AlertDemo = () => {
   );
 };
 
+const ButtonDemo = () => {
+  return (
+    <Button>
+      <ButtonText>Button</ButtonText>
+    </Button>
+  );
+};
+
 function NativeComponent() {
   return (
     <GluestackUIProvider mode="light">
       <View className="flex-1 justify-center items-center">
-        <AlertDemo />
+        {/* <AlertDemo /> */}
+        <ButtonDemo />
       </View>
     </GluestackUIProvider>
   );
